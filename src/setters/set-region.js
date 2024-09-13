@@ -10,9 +10,10 @@ const setRegion = (name = '') => {
     } else{
         newRegion = name;
     }
-const id = getId('__fixteres__/region.csv')
+const id = getId('__fixtures__/region.csv')
 
-updater('__fixteres__/region.csv', `\n${id}|${newRegion}`);
+updater('__fixtures__/region.csv', `\n${id};${newRegion}`);
 return id;
 };
+
 export default setRegion;
